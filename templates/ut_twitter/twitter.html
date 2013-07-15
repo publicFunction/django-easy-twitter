@@ -1,0 +1,16 @@
+{% load ut_twitter_tags %}
+<article class="twitter-feed">
+	<h3>@{{user}}</h3>
+	<ul>
+	{% for tweet in tweets %}
+	<li>
+		<span>{{tweet.created_at|nice_date:0}}</span>
+		{% if tweet.entities.urls %}
+		<p>{{tweet.text|parse_urls:tweet.entities.urls|safe}}</p>
+		{% else %}
+		<p>{{tweet.text}}</p>
+		{% endif %}
+	</li>
+	{% endfor %}
+	</ul>
+</article>
