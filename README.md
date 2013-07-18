@@ -17,11 +17,11 @@ Once installed just add it to your installed apps:
 						...
 					)
 
-#Add templates can be picked up and add:
-#
-#  os.path.join(PROJECT_PATH, "easy_twitter", "templates"),
-#
-#to your own TEMPLATE_DIRS = ( ... ) tuple
+Add templates can be picked up and add:
+
+  os.path.join(PROJECT_PATH, "easy_twitter", "templates"),
+
+to your own TEMPLATE_DIRS = ( ... ) tuple
 
 Run Sync DB.
 Then run manage.py migrate --fake (if you use south)
