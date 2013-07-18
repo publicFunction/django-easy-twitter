@@ -3,10 +3,10 @@ from django import template
 
 register = template.Library()
 
-from ut_twitter.views import show_tweets
-from ut_twitter.settings import DISPLAY_NAME
+from easy_twitter.views import show_tweets
+from easy_twitter.settings import DISPLAY_NAME
 
-@register.inclusion_tag('ut_twitter/twitter.html', takes_context=True)
+@register.inclusion_tag('easy_twitter/twitter.html', takes_context=True)
 def show_tweet(context):
     return {
             'tweets' : show_tweets(),

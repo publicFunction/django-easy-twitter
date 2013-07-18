@@ -1,6 +1,6 @@
-{% load ut_twitter_tags %}
+{% load easy_twitter_tags %}
 <article class="twitter-feed">
-	<h3>@{{user}}</h3>
+	<h3><a href="https://twitter.com/PASMALtd" title="@{{user|upper}} on Twitter">@{{user|upper}} on Twitter</a></h3>
 	<ul>
 	{% for tweet in tweets %}
 	<li>
