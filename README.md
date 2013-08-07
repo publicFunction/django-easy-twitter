@@ -17,12 +17,6 @@ Once installed just add it to your installed apps:
 						...
 					)
 
-Add templates can be picked up and add:
-
-  os.path.join(PROJECT_PATH, "easy_twitter", "templates"),
-
-to your own TEMPLATE_DIRS = ( ... ) tuple
-
 Run Sync DB.
 Then run manage.py migrate --fake (if you use south)
 
@@ -41,8 +35,18 @@ Copy your Consumer Key and Secret into the settings.
 Change the URI's if they differ from the default ones
 Then click the Create My Access Token Button and copy these settings into the model.
 
-Once done ... TBC
+Once done you can then simply add:
 
+{% load eay_twitter_tags %}
+
+to your site load tag and then add:
+
+{% show_tweet "public_function" %}
+
+any where you want the tweet(s) to appear.
+
+The model allows you to control any number of accounts you want, by simply adding the twitter accounts settings (detailed above) into the model, 
+then you simply add another show_tweet tag with the saved twitter account name.
 
 OAuth is only required when creating an app that access other peoples twittter accounts this app is not designed for that, it is 
 a simple way to pull your own feed onto your site.
