@@ -8,16 +8,16 @@
 REQUEST_TOKEN_URI = 'https://api.twitter.com/oauth/request_token'
 AUTH_TOKEN_URI = 'https://api.twitter.com/oauth/authorize'
 ACCESS_TOKEN_URI = 'https://api.twitter.com/oauth/access_token'
-DISPLAY_NAME = 'pasmaltd'
-USER_ID = '83575214'
+DISPLAY_NAME = ''
+USER_ID = ''
 #    The ACCESS_TOKEN* settings only work for accessing your own twitter account, they must be generated when you create your account.
 #    3rd party apps will still require your authorisation, so follow the Twython docs for dealing with that
-ACCESS_TOKEN = '83575214-LSNynwFCYpDeFoTDNsNVK0PjSKPkd9o1EyYPiHwM'
-ACCESS_TOKEN_SECRET = 'ZD5GIASCixOuwbnViNbwjZfXQ7g543491XB63Jk8c'
+ACCESS_TOKEN = ''
+ACCESS_TOKEN_SECRET = ''
 
 AUTH_TOKEN = ACCESS_TOKEN
 
-CONSUMER_KEY = 'oCGp56ixrt7CJMTIqr8sdw'
-CONSUMER_SECRET = '95QZ4VRv4aiENGVwfpHq9N6bsloqTatKIFclYZGacE'
+CONSUMER_KEY = ''
+CONSUMER_SECRET = ''
 
 COUNT_LIMIT = 1

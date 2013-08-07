@@ -4,13 +4,13 @@ from django import template
 register = template.Library()
 
 from easy_twitter.views import show_tweets
-from easy_twitter.settings import DISPLAY_NAME
 
 @register.inclusion_tag('easy_twitter/twitter.html', takes_context=True)
-def show_tweet(context):
+def show_tweet(context, account):
+    tweets = show_tweets(account)
     return {
-            'tweets' : show_tweets(),
-            'user' : DISPLAY_NAME
+            'tweets' : tweets,
+            'user' : account
             }
 
 @register.filter(is_safe=True)
