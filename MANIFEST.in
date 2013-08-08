@@ -1,0 +1,3 @@
+include LICENSE.txt
+recursive-include easy_twitter/migrations *
+recursive-include easy_twitter/templates *
