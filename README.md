@@ -3,12 +3,18 @@ django-easy-twitter
 
 Easy Twitter Feed for Django
 
-This allows you to put a basic twitter feed for your own account onto a page template.
+This allows you to put a basic twitter feed for your own account onto a page template. This app uses Twython.
 
-This app makes use of Twython so please install that first before using, or add it to your own requirements.txt file:
-  
-  pip install twython
-  
+To Install add:
+	
+	git+git://github.com/publicFunction/django-easy-twitter#django-easy-twitter
+
+to your requirements.txt file and or run:
+	
+	pip install git+git://github.com/publicFunction/django-easy-twitter#django-easy-twitter
+	
+in your CLI
+
 Once installed just add it to your installed apps:
 
 	INSTALLED_APPS = (
