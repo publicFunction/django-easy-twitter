@@ -16,7 +16,7 @@ setup(
     ],
     package_data={
         'easy_twitter': [
-            'templates/*',
+            'easy_twitter/templates/easy_twitter/*',
         ],
     },
     classifiers=[
