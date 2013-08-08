@@ -9,7 +9,7 @@ setup(
     author_email='chris@publicfunction.co.uk',
     keywords='django twitter easy twitter easy-twitter',
     install_requires=['django', 'twython'],
-    #url='http://github.com/DrMegahertz/django-gravatar',
+    url='https://github.com/publicFunction/django-easy-twitter',
     packages=[
         'easy_twitter',
         'easy_twitter.templatetags',
