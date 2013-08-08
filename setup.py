@@ -13,6 +13,8 @@ setup(
     packages=[
         'easy_twitter',
         'easy_twitter.templatetags',
+        'easy_twitter.templates',
+        'easy_twitter.templates.easy_twitter',
     ],
     package_data={
         'easy_twitter': [
